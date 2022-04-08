@@ -19,7 +19,7 @@ namespace Lab_4
 
         public T this[int index]
         {
-            //get => (T)_items
+            get => (T)_items;
             set => _items.Add(value);
         }
 
@@ -33,11 +33,10 @@ namespace Lab_4
             get { return _items.Count; }
         }
 
-       /* public unsafe int Capacity()
-        {
-            return sizeof(typeof(DynamicArray<int>));
-        }
-       */
+       //public int Capacity()
+       // {
+            
+      //  }
 
         public bool IsReadOnly => throw new System.NotImplementedException();
 
